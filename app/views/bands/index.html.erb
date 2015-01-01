@@ -1,0 +1,22 @@
+<div id="bands" class="container-fluid" >
+  <div class="row">
+
+		<% if @bands.blank? %>
+
+			<h1 class="text-info text-center">Tu Wishlist está vacia :( </h1>
+			 
+		<% else %>
+
+		    <% @bands.each do |band| %>
+		      <%= render "band", :band => band %>
+		    <% end %>
+		
+		<% end %>  
+
+  </div>
+</div>
+<div id="boxShow" ></div>
+
+ 
+
+  

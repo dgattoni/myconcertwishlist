@@ -1,0 +1,72 @@
+// Place all the styles related to the Bands controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_band, .edit_band {
+background: none repeat scroll 0 0 white;
+border:4px solid #cdcdcd;
+margin: 0 auto;
+padding: 22px;
+position: absolute;
+top: 0px;
+left:0px;
+width: 253px;
+z-index: 1;
+}
+
+.nav{   z-index: 999999;}
+
+.navbar-collapse.in {
+    overflow-y: visible!important;
+}
+
+
+#box {
+    height: 400px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 269px;
+    z-index: 999999;
+}
+
+
+#boxShow {
+background:#fff;
+margin: 0 auto;
+position: absolute;
+top: 58px;
+width: 100%;
+display:none;
+}
+.thumbnail {
+background-color:inherit;
+border: 0px solid #ddd;
+border-radius: 0px;
+display: block;
+line-height: 1.42857;
+margin-bottom: 0px;
+padding: 0px;
+transition: all 0.2s ease-in-out 0s;
+}
+.thumbnail .caption{ color: #fff; }
+.navbar-brand  {
+font-size:20px;
+font-family: 'Roboto', sans-serif;
+color: #fff;
+text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+}
+
+.thumbnail .caption h3 {
+font: 400 22px/0.8 'Lobster Two', Helvetica, sans-serif;
+color: #fff;
+text-shadow: 4px 4px 3px rgba(0,0,0,0.5); 
+min-height: 52px;
+}
+#resultadoCss { display:none;}
+.btn-default {  
+background-color:#fff;
+border-color:#666;
+}
+.glyphicon-heart { color:pink; }
+ h1{  font: 400 38px/0.8 'Lobster Two', Helvetica, sans-serif;}

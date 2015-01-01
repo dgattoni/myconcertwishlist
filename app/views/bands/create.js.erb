@@ -1,0 +1,18 @@
+<% if @band.errors.count == 0 %>
+	
+	$('#box').remove();	
+	$('#new-band-link').show();
+	$('#bands .row').append('<%= j render("band", :band => @band) %>'); 
+	
+	//agregamos color aleatorio a los div que contengan la clase .item
+	//si quieres quitar este efecto simplemente borra esta porcion de code Jquery
+	$('.item').each(function () {
+		var hue = 'rgba(' + (Math.floor((256-45)*Math.random()) + 134) + ',' + (Math.floor((256-88)*Math.random()) + 57) + ',' + (Math.floor((256-56)*Math.random()) + 130) + ',1)';
+		$(this).css("background-color", hue);
+	});
+	//fin color aleatorio
+
+<% else %>
+	$('#box').remove();		 
+	$('#new-band-link').after('<%= j render("form") %>');
+<% end %>

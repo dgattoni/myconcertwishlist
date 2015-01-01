@@ -1,0 +1,6 @@
+$('#new-band-link').hide().after('<%= j render("form") %>');
+//boton cerrar 
+$("#btncerrar").click(function(){
+	$("#box").hide();
+	$('#new-band-link').show();	
+}); 

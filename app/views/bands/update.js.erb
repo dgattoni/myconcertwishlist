@@ -1,0 +1,18 @@
+<% if @band.errors.count == 0 %>
+
+	$('#new-band-link').show();
+	$('#edit_band_<%= @band.id %>').remove();
+	$('#band_<%= @band.id %>').replaceWith('<%= j render @band %>');
+	var estilo = $( "#resultadoCss").text();	 
+	$('#band_<%= @band.id %>').attr("style", estilo);
+	$('.item').each(function () {
+		var hue = 'rgba(' + (Math.floor((256-45)*Math.random()) + 134) + ',' + (Math.floor((256-88)*Math.random()) + 57) + ',' + (Math.floor((256-56)*Math.random()) + 130) + ',1)';
+		$(this).css("background-color", hue);
+	});
+<% else %>
+
+	$('#edit_task_<%= @band.id %>').remove();
+	$('#new-band-link').after('<%= j render("form") %>');
+
+
+<% end %>

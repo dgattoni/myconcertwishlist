@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col-lg-12 pull-right">  
+    <div class="field">
+     <%= link_to 'x', bands_path, :class => "btn btn-sm btn-info pull-right" %>
+   </div> 
+ </div>
+ <div class="jumbotron">
+   <p class="text-center"> 
+     <%= image_tag(@band.image, class:"img-thumbnail") %>
+   </p>
+   <h1 class="text-center"> <%= @band.name %></h1>
+   <p class="lead text-center"> <%= @band.description %></p>
+   <p class="text-center"> Grado de fanatísmo:</p>
+   <p class="text-center">
+    <span class="text-center">
+      <%  for i in 1..@band.fanlevel %>
+      <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 
+      <%  end %>
+    </span>
+  </p>
+</div>

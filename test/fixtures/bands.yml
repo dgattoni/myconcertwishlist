@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  fanlevel: 1
+  description: MyString
+  image: MyString
+
+two:
+  name: MyString
+  fanlevel: 1
+  description: MyString
+  image: MyString
