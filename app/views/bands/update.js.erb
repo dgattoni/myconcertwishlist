@@ -1,6 +1,7 @@
 <% if @band.errors.count == 0 %>
 
 	$('#new-band-link').show();
+	$('#box').remove();		 
 	$('#edit_band_<%= @band.id %>').remove();
 	$('#band_<%= @band.id %>').replaceWith('<%= j render @band %>');
 	var estilo = $( "#resultadoCss").text();	 
@@ -10,7 +11,7 @@
 		$(this).css("background-color", hue);
 	});
 <% else %>
-
+	$('#box').remove();		 
 	$('#edit_task_<%= @band.id %>').remove();
 	$('#new-band-link').after('<%= j render("form") %>');
 
